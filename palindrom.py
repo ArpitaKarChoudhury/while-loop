@@ -1,14 +1,11 @@
-name=input("enter no")
-b=len(name)
-c=0-len(name)
-sum=""
-i=-1
-while c<=i:
-    a=name[i]
-    sum=sum+a
-    i=i-1
-print(sum)
-if name==sum:
-    print("palindrome")
+# 20. Write a program to check whether a number is palindrome or not.
+num=input("enter number")
+i=0
+b=""
+while i<len(num):
+    b=num[i]+b
+    i=i+1
+if int(num)==int(b):
+    print(num,"is palindrome number")
 else:
-    print("not palindrome")    
+    print(num,"is not a palindrome number")
